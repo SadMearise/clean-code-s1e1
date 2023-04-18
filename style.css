@@ -14,12 +14,17 @@ body {
     width: 100%;
 }
 .aaa .more_inf {
+    display: block;
+    margin-top: -3px;
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 .aaa { text-align: center;
 }
+}
+section:first-child {
+  margin: 1em 0;
 }
 .centered-main-page-element {
     display: block;
@@ -43,6 +48,7 @@ li, h3 {
 }
 input,button{
     outline:none;
+    box-sizing: border-box;
 }
 button {
     background: none;
@@ -55,6 +61,9 @@ button {
 }
 button:hover {
     color: #3a3a3a;
+}
+.delete {
+    height: 32px;
 }
 /* Heading */
 h3,
