@@ -6,51 +6,53 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <header class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="The eisenhower matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <header class="header">
+      <img class="header__image" src="./eisenhower-matrix.jpg" alt="The eisenhower matrix">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="centered-main-page-element">
-      <section id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
-          <button>Add</button>
+    <main class="main">
+      <section class="main__section">
+        <div class="main__add-block add-block">
+          <label class="add-block__title" for="new-task-input">Add Item</label>
+          <div class="add-block__row">
+            <input id="new-task-input" class="add-block__input" type="text">
+            <button class="add-block__button btn btn_add">Add</button>
+          </div>
         </div>
       </section>
-      <section>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="Remove task button">
+      <section class="main__section">
+        <h3 class="main__title">Todo</h3>
+        <ul class="main__incomplete-tasks-list">
+          <li class="main__incomplete-item item">
+            <input class="item__checkbox" type="checkbox">
+            <label class="item__label">Pay Bills</label>
+            <input type="text" class="item__input">
+            <button class="item__button btn btn_edit">Edit</button>
+            <button class="item__button btn btn_delete">
+              <img class="item__img" src="./remove.svg" alt="Remove task button">
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="Remove task button">
+          <li class="main__incomplete-item item item-edit">
+            <input class="item__checkbox" type="checkbox">
+            <label class="item__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="item__input">
+            <button class="item__button btn btn_edit">Save</button>
+            <button class="item__button btn btn_delete">
+              <img class="item__img" src="./remove.svg" alt="Remove task button">
             </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="Remove task button">
+      <section class="main__section">
+        <h3 class="main__title">Completed</h3>
+        <ul class="main__completed-tasks-list">
+          <li class="main__completed-item item">
+            <input class="item__checkbox" type="checkbox" checked>
+            <label class="item__label">See the Doctor</label>
+            <input type="text" class="item__input">
+            <button class="item__button btn btn_edit">Edit</button>
+            <button class="item__button btn btn_delete">
+              <img class="item__img" src="./remove.svg" alt="Remove task button">
             </button>
           </li>
         </ul>
